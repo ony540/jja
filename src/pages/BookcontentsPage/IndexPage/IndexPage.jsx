@@ -12,7 +12,6 @@ import {
 } from './IndexPageStyle';
 import chapterList from '../../../db/chapter.json';
 import CircleButton from '../../../components/CircleButton/CircleButton';
-import Spinner from '../../../components/Spinner/Spinner';
 
 export default function IndexPage() {
     const { state } = useLocation();
@@ -28,7 +27,7 @@ export default function IndexPage() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (!isBeforeChapter) {
+        if (!isBeforeChapter && isImageLoaded) {
             const timer = () =>
                 setTimeout(() => {
                     setIsButtonShow(true);
@@ -38,7 +37,7 @@ export default function IndexPage() {
         } else {
             setIsButtonShow(true);
         }
-    }, [isBeforeChapter]);
+    }, [isBeforeChapter, isImageLoaded]);
 
     const handleClickChapterButton = chapter => {
         setIsMovetoChapter(true);
@@ -64,7 +63,7 @@ export default function IndexPage() {
         imgPreload();
     }, []);
 
-    if (!isImageLoaded) return <Spinner />;
+    if (!isImageLoaded) return null;
 
     return (
         <IndexPageWrapper>
