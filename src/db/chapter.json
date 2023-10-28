@@ -1,0 +1,75 @@
+{
+    "contentList": [
+        {
+            "id": 2,
+            "title": "자바스크립트 기본",
+            "indexData": ["연산자", "반복문과 switch문", "함수"],
+            "color": "red"
+        },
+        {
+            "id": 4,
+            "title": "객체: 기본",
+            "indexData": ["객체 복사", "this", "new와 생성자"],
+            "color": "orange"
+        },
+        {
+            "id": 5,
+            "title": "자료구조와 자료형",
+            "indexData": [
+                "배열과 메서드 1",
+                "배열과 메서드 2",
+                "Symbol",
+                "map과 set",
+                "Object keys, values, entries",
+                "JSON과 메서드"
+            ],
+            "color": "yellow"
+        },
+        {
+            "id": 6,
+            "title": "함수 심화학습",
+            "indexData": [
+                "재귀와 스택",
+                "나머지 매개변수와 스프레드 문법",
+                "변수의 유효범위와 클로저",
+                "new Function 문법",
+                "호출 스케줄링"
+            ],
+            "color": "lightGreen"
+        },
+        {
+            "id": 7,
+            "title": "객체 프로퍼티와 프로토타입",
+            "indexData": ["getter와 setter", "프로토타입: 상속"],
+            "color": "skyBlue"
+        },
+        {
+            "id": 9,
+            "title": "클래스",
+            "indexData": [
+                "클래스의 기본",
+                "클래스의 상속",
+                "private protected"
+            ],
+            "color": "blue"
+        },
+        {
+            "id": 10,
+            "title": "에러 핸들링",
+            "indexData": ["\"try catch\"와 에러 핸들링"],
+            "color": "purple"
+        },
+        {
+            "id": 11,
+            "title": "프라미스와 async/await",
+            "indexData": ["Promise", "Promise와 에러 핸들링", "async와 await"],
+            "color": "pink"
+        },
+        {
+            "id": 12,
+            "title": "제너레이터와 비동기 이터레이션",
+            "indexData": ["제너레이터"],
+            "color": "lightGray"
+        }
+    ]
+}
