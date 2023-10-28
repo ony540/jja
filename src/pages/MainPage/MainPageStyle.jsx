@@ -29,7 +29,7 @@ export const MainWrapper = styled.div`
     background: url(${({ bookShelfImg }) => bookShelfImg}) no-repeat bottom /
         100% 85px;
     ${fadeOutBgAnimate}
-    @media screen and (min-height: 925px) {
+    @media (min-height: 925px) {
         height: calc(100vh - 104px);
     }
 
@@ -50,7 +50,7 @@ export const BookList = styled.ul`
     padding: 0 80px 0 30px;
     ${fadeOutBgAnimate}
 
-    @media screen and (min-height: 925px) {
+    @media (min-height: 925px) {
         display: flex;
         align-content: end;
         flex-wrap: wrap;
@@ -70,7 +70,7 @@ export const BookList = styled.ul`
     @media (max-width: 480px) {
         margin-top: 0px;
     }
-    @media screen and (max-height: 925px) {
+    @media (max-width: 1024px) and (max-height: 925px) {
         margin-top: 240px;
     }
 `;
@@ -134,7 +134,7 @@ export const BookItem = styled.li`
         transform: rotate(16deg);
         margin: 0 90px 0 88px;
 
-        @media screen and (min-height: 925px) {
+        @media (min-height: 925px) {
             transform: rotate(16deg) translate(16px, 60px);
             &:hover {
                 transform: scale(1.1) translate(16px, 50px);
