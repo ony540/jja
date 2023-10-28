@@ -29,6 +29,7 @@ export const MainWrapper = styled.div`
     background: url(${({ bookShelfImg }) => bookShelfImg}) no-repeat bottom /
         100% 85px;
     ${fadeOutBgAnimate}
+
     @media (min-height: 925px) {
         height: calc(100vh - 104px);
     }
@@ -38,6 +39,7 @@ export const MainWrapper = styled.div`
         justify-content: center;
         align-items: flex-start;
         background: none;
+        height: unset;
     }
 `;
 
@@ -63,7 +65,7 @@ export const BookList = styled.ul`
         transform: rotate(-90deg);
         background: none;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: nowrap;
         margin-top: 50px;
     }
@@ -72,6 +74,7 @@ export const BookList = styled.ul`
     }
     @media (max-width: 1024px) and (max-height: 925px) {
         margin-top: 240px;
+        width: unset;
     }
 `;
 
@@ -120,13 +123,14 @@ export const BookItem = styled.li`
     transition: all 0.5s;
 
     @media (max-width: 1024px) {
-        width: unset;
+        width: 75px;
         height: 510px;
         margin: 0 20px 0 0;
         aspect-ratio: 10 / 68;
     }
 
     @media (max-width: 480px) {
+        width: calc((100vw - 40px) / 6.8);
         height: calc(100vw - 40px);
     }
 
@@ -212,7 +216,6 @@ export const BookItem = styled.li`
             height: unset;
             width: 510px;
             padding: 0 50px;
-
             gap: 30px;
         }
 
