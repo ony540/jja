@@ -35,7 +35,7 @@ export default function IndexPage() {
             timer();
             return clearTimeout(timer);
         } else {
-            setIsButtonShow(true);
+            setIsButtonShow(false);
         }
     }, [isBeforeChapter, isImageLoaded]);
 
@@ -53,7 +53,6 @@ export default function IndexPage() {
     const imgPreload = () => {
         const spineImg = new Image();
         spineImg.src = `../img/cover/cover${id}.png`;
-
         spineImg.onload = () => {
             setIsImageLoaded(true);
         };
@@ -62,8 +61,6 @@ export default function IndexPage() {
     useLayoutEffect(() => {
         imgPreload();
     }, []);
-
-    if (!isImageLoaded) return null;
 
     return (
         <IndexPageWrapper>

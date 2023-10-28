@@ -108,6 +108,7 @@ export const BookBox = styled.div`
     width: 1098px;
     height: 680px;
     transform-style: preserve-3d;
+    transform: rotateY(90deg);
 
     ${bookRotateOpenAnimation}
     ${nonAnimateBox}
@@ -392,12 +393,6 @@ export const indexMenuButtonCss = css`
         bottom: 20px;
         right: 34px;
     }
-
-    @media (max-width: 1024px) {
-        top: auto;
-        bottom: 20px;
-        right: 34px;
-    }
 `;
 export const backButtonCss = css`
     position: absolute;
@@ -405,4 +400,12 @@ export const backButtonCss = css`
     left: -1186px;
     z-index: 100;
     transform: rotate(180deg) translate3d(0, 50%, 2px);
+
+    @media (max-width: 1024px) {
+        left: -540px;
+    }
+
+    @media (max-width: 480px) {
+        display: none;
+    }
 `;
